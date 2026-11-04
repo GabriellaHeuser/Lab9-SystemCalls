@@ -24,7 +24,7 @@ int main(int argc, char* argv[])
 {
 
     if (argc == 1){ //no argument case
-        //getpid returns process id of the calling process (never fails)
+        //getpid() returns process id of the calling process (never fails)
         pid_t current = getpid();
         printProcess(current);
     } else if (argc == 2){ //single argument (process id)

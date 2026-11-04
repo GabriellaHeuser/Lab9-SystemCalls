@@ -40,7 +40,7 @@ int main(int argc, char* argv[]){
     }
 
     //uname fills struct with system id strings
-    //returns 0 on success or -1 on error. 
+    //returns 0 on success, -1 on error
     //provides the network name, OS name, release, version, and hardware type.
     //checking for blank - must check if first character is '\0'
     //skipping blank values in this assignment

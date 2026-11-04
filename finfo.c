@@ -21,7 +21,7 @@ int main(int argc, char* argv[])
         return 1;
     }
 
-    //lstat fills a struct stat with details about the file and 
+    //lstat fills details about the file and 
     //  returns 0 on success and -1 on error. 
     // using lstat because
     // stat  - follows symbolic links

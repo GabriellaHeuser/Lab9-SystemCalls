@@ -14,7 +14,7 @@
 
 int main(int argc, char* argv[])
 {
-    //nice() ADDS its argument to the process's current nice value. 
+    //nice() adds argument to the process's current nice value
     //higher nice value = lower priority
     //using 10 reduces priority by 10
     //nice() returns the new nice value
@@ -34,7 +34,7 @@ int main(int argc, char* argv[])
     duration.tv_sec = 1;
     duration.tv_nsec = 837272638;
 
-    //nanosleep returns 0 on success, or -1 on error
+    //nanosleep returns 0 on success, -1 on error
     // Second argument can receives remaining time which we aren't using, so NULL
     if(nanosleep(&duration, NULL)!=0){ //error checking
         perror("nanosleep failed");
